@@ -1,0 +1,39 @@
+:root{
+  --polar: #0077C8;
+  --deep:  #004E7A;
+  --ice:   #EAF8FF;
+  --accent: #00A6FF;
+  --muted: #6B7785;
+  --radius: 12px;
+}
+*{box-sizing:border-box}
+body{font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; margin:0; color:#0b1720; background: #ffffff;}
+.container{max-width:1100px;margin:0 auto;padding:24px}
+.site-header{background:linear-gradient(90deg,var(--polar),var(--deep));color:white;position:sticky;top:0;z-index:10}
+.site-header .nav{display:flex;align-items:center;justify-content:space-between}
+.brand{font-weight:800;letter-spacing:1px;color:white;text-decoration:none;font-size:1.25rem;padding:14px}
+.site-header nav a{color:rgba(255,255,255,0.95);margin-left:18px;text-decoration:none;padding:14px}
+.hero{padding:56px 0;background:linear-gradient(180deg,var(--ice),white)}
+.hero-grid{display:grid;grid-template-columns:1fr 360px;gap:32px;align-items:center}
+.hero h1{font-size:2.2rem;margin:0 0 12px;color:var(--deep)}
+.lead{color:var(--muted);font-size:1.05rem}
+.btn{display:inline-block;padding:12px 20px;border-radius:10px;background:var(--polar);color:white;text-decoration:none;font-weight:600;margin-top:12px;border:none;cursor:pointer}
+.section{padding:48px 0}
+.section.alt{background:linear-gradient(180deg,#fbfeff,#f7fbff)}
+.cards{display:flex;gap:16px;margin-top:18px}
+.card{background:white;border-radius:10px;padding:18px;box-shadow:0 6px 18px rgba(7,33,56,0.06);flex:1}
+.services-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-top:16px}
+.service{background:white;border-radius:10px;padding:18px;box-shadow:0 8px 20px rgba(7,33,56,0.05)}
+.contact-form{max-width:760px;margin-top:16px}
+.form-row{display:flex;gap:12px}
+input, textarea{width:100%;padding:12px;border-radius:8px;border:1px solid #dbe7ef}
+.status{margin-top:10px}
+.site-footer{padding:18px 0;background:#f4f9fc;text-align:center;color:var(--muted)}
+
+/* responsive */
+@media (max-width:880px){
+  .hero-grid{grid-template-columns:1fr;}
+  .cards{flex-direction:column}
+  .services-grid{grid-template-columns:1fr}
+  .form-row{flex-direction:column}
+}
