@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Artiko — Fábrica de Hielo</title>
+  <meta name="description" content="Artiko — Hielo puro, servicio confiable y logística eficiente" />
+  <link rel="icon" href="/static/favicon.ico" />
+  <link rel="stylesheet" href="/static/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="#">ARTIKO</a>
+      <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO / INICIO -->
+    <section id="inicio" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <h1>El poder del frío, siempre contigo.</h1>
+          <p>Artiko produce hielo en bolsa y en bloque con la mayor calidad sanitaria y logística para comercios, restaurantes y eventos.</p>
+          <a class="btn" href="#contacto">Solicitar cotización</a>
+        </div>
+        <div class="hero-image" aria-hidden="true">
+          <img src="/static/logo.png" alt="Logo Artiko" style="max-width:100%;height:auto;border-radius:12px;"/>
+        </div>
+      </div>
+    </section>
+
+    <!-- NOSOTROS -->
+    <section id="nosotros" class="section">
+      <div class="container">
+        <h2>Nosotros</h2>
+        <p class="lead">En Artiko combinamos tecnología, control de calidad y logística para entregar hielo que conserva la cadena de frío y satisface las necesidades de restaurantes, tiendas y eventos.</p>
+        <div class="cards">
+          <article class="card">
+            <h3>Calidad certificada</h3>
+            <p>Control microbiológico y procesos de purificación del agua.</p>
+          </article>
+          <article class="card">
+            <h3>Producción escalable</h3>
+            <p>Capacidad para pedidos pequeños y grandes entregas por contrato.</p>
+          </article>
+          <article class="card">
+            <h3>Logística propia</h3>
+            <p>Flota refrigerada para garantizar la entrega en óptimas condiciones.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICIOS -->
+    <section id="servicios" class="section alt">
+      <div class="container">
+        <h2>Servicios</h2>
+        <div class="services-grid">
+          <div class="service">
+            <h4>Hielo en bolsas (5kg)</h4>
+            <p>Empaque resistente, ideal para venta minorista y eventos.</p>
+          </div>
+          <div class="service">
+            <h4>Bloques de hielo</h4>
+            <p>Bloques para conservación industrial y transporte.</p>
+          </div>
+          <div class="service">
+            <h4>Contratos para restaurantes</h4>
+            <p>Suministro programado con facturación y logística mensual.</p>
+          </div>
+          <div class="service">
+            <h4>Eventos y catering</h4>
+            <p>Entrega a tiempo y soporte en sitio para grandes eventos.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto" class="section contact">
+      <div class="container">
+        <h2>Contacto</h2>
+        <p class="lead">¿Listo para recibir una cotización o hablar de un contrato? Completa el formulario y te contactamos.</p>
+
+        <form id="contactForm" class="contact-form">
+          <div class="form-row">
+            <input type="text" id="name" name="name" placeholder="Nombre" required />
+            <input type="email" id="email" name="email" placeholder="Correo electrónico" required />
+          </div>
+          <div class="form-row">
+            <input type="tel" id="phone" name="phone" placeholder="Teléfono" />
+            <input type="text" id="company" name="company" placeholder="Empresa (opcional)" />
+          </div>
+          <textarea id="message" name="message" placeholder="Cuéntanos los detalles del pedido" rows="6" required></textarea>
+          <button type="submit" class="btn">Enviar</button>
+          <p id="formStatus" class="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Artiko — Fábrica de Hielo. Todos los derechos reservados.</p>
+      <p>Tel: +52 442 123 4567 · Email: ventas@artiko.mx</p>
+      <p><a href="https://www.instagram.com/" target="_blank">Instagram</a> · <a href="https://www.facebook.com/" target="_blank">Facebook</a></p>
+    </div>
+  </footer>
+
+  <script src="/static/script.js"></script>
+</body>
+</html>
